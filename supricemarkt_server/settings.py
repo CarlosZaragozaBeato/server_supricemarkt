@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'supricemarkt_server.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-""" 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -93,7 +93,7 @@ DATABASES = {
         'PORT': '3306',
     }
 } 
-"""
+
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = [ 'GET']
 CORS_ALLOW_HEADERS = [    'access-control-allow-origin',    'content-type',]
@@ -143,3 +143,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
