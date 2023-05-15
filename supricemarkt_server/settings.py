@@ -89,8 +89,8 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'root',
         'PASSWORD': 'xCxDzMTEkfgwCQI8W3SQ',
-        'HOST': 'mysql://root:xCxDzMTEkfgwCQI8W3SQ@containers-us-west-156.railway.app:6168/railway',
-        'PORT': 'containers-us-west-156.railway.app',
+        'HOST': 'containers-us-west-156.railway.app',
+        'PORT': '6168',
     }
 } 
 
