@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'supricemarkt_server.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'supricemarkt',
-        'USER': 'prueba',
-        'PASSWORD': '1234',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'xCxDzMTEkfgwCQI8W3SQ',
+        'HOST': 'mysql://root:xCxDzMTEkfgwCQI8W3SQ@containers-us-west-156.railway.app:6168/railway',
+        'PORT': 'containers-us-west-156.railway.app',
     }
 } 
 
