@@ -3,3 +3,5 @@ selenium
 django-cors-headers
 mysql-connector-python
 mysqlclient
+gunicorn
+psycopg2-binary
