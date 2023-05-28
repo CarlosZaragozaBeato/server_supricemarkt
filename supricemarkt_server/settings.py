@@ -83,16 +83,6 @@ WSGI_APPLICATION = 'supricemarkt_server.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',
-        'USER': 'root',
-        'PASSWORD': 'a3fr5FBJYswKA1Dwzqqb',
-        'HOST': 'containers-us-west-51.railway.app',
-        'PORT': '6828',
-    }
-} 
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = [ 'GET']

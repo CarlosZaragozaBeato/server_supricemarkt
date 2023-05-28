@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -22,7 +21,7 @@ class Util:
                 By.CLASS_NAME, className)))
     
     def obtenerXpath(self, xPath:str):
-        return self.wait1.until(EC.element_to_be_clickable((
+        return self.wait1.until(EC.presence_of_element_located((
                 By.XPATH, xPath)))
         
     def obtenerClassName(self, ClassName):
@@ -33,3 +32,12 @@ class Util:
         return self.wait1.until(EC.presence_of_all_elements_located((
             By.CSS_SELECTOR, cssSelector
         )))
+        
+    def obtener_uno_CssSelector(self, cssSelector):
+        return self.wait1.until(EC.presence_of_element_located((
+            By.CSS_SELECTOR, cssSelector
+        )))
+        
+    def obtenerClassNames(self, ClassName):
+        return self.wait1.until(EC.presence_of_all_elements_located((
+                By.CLASS_NAME, ClassName)))

@@ -4,7 +4,7 @@ from django.views.decorators.http import require_http_methods
 from selenium.webdriver.chrome.options import Options
 from web_scrapping.scrapping.Search import Search
 from selenium import webdriver
-
+import threading
 
 @require_http_methods(["GET"])
 def getMainData(request):
@@ -15,6 +15,8 @@ def getMainData(request):
         producto = request.GET.get('producto')
         data = []
         search = Search(driver=driver, product_name=producto)
+
+
         data = search.SearchAll()
         driver.quit()
         return JsonResponse(data, safe=False)
@@ -42,7 +44,6 @@ def getAhorraMasData(request):
         chrome_options.add_argument("--disable-notifications")
         chrome_options.add_argument('--headless')
         driver = webdriver.Chrome(options=chrome_options)
-        driver = webdriver.Chrome()
         producto = request.GET.get("producto")
         search = Search(driver=driver, producto_name = producto)
         data = search.SearchAhorraMasName()
